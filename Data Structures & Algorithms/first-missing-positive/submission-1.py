@@ -1,0 +1,10 @@
+class Solution:
+    def firstMissingPositive(self, nums: List[int]) -> int:
+        numset=set(nums)
+        print(len(nums))
+        for i in range(1,len(nums)+1):
+            print(i)
+            if i not in numset:
+                return i
+        return len(nums)+1
+
